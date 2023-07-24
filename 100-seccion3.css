@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.divLineaTransversalSeccion3.arriba {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    -10deg,
+    #0a2540 0%,
+    #0a2540 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  position: relative;
+  top: 1px;
+  transition: all 0.25s;
+}
+
+.seccion3 {
+  background-color: #0a2540;
+  padding: 0px 16px;
+  display: flex;
+  transition: all 0.25s;
+}
+
+.divLineaTransversalSeccion3.abajo {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: -1px;
+  background: linear-gradient(
+    170deg,
+    #0a2540 0%,
+    #0a2540 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+@media (min-width: 320px) {
+  .flexDerecha {
+    display: none;
+  }
+
+  .seccion3 .bloqueGrande * {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+  }
+
+  .seccion3 .bloqueGrande + .divBloquesPequenos {
+    margin-top: 35px;
+  }
+
+  .seccion3 .bloqueGrande > .h2DeBloque {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 34px;
+    width: 100%;
+    line-height: 50px;
+  }
+
+  .seccion3 .bloqueGrande > .subtituloSeccion3 {
+    font-size: 17px;
+    width: max-content;
+    height: 26px;
+    font-family: "Anek Telugu", sans-serif;
+    color: #00d4ff;
+    margin: 16px 0;
+  }
+
+  .seccion3 .bloqueGrande > .pDeBloque {
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 26px;
+  }
+
+  .seccion3 .bloqueGrande > .botonDeBloque {
+    background-color: #00d4ff;
+    color: #0a2540;
+    width: 136px;
+    height: 40px;
+    border-radius: 19px;
+    border-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease;
+    margin-top: 16px;
+    margin-top: 30px;
+  }
+
+  .seccion3 .bloqueGrande > .botonDeBloque:hover {
+    background-color: white;
+  }
+
+  .seccion3 .bloqueGrande > .botonDeBloque > .imagenDeBoton {
+    transition: all 0.5s ease;
+  }
+
+  .seccion3 .bloqueGrande > .botonDeBloque:hover > .imagenDeBoton {
+    transform: translateX(7px);
+  }
+
+  /* Bloque bloque pequeño. */
+
+  .seccion3 .bloquePequeno {
+    font-family: "Roboto", sans-serif;
+    padding: 8px 16px 8px 0;
+  }
+
+  .seccion3 .bloquePequeno > .h3DeBloque {
+    color: white;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+  }
+
+  .seccion3 .bloquePequeno > .pDeBloque {
+    color: #adbdcc;
+    margin: 16px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+
+  .seccion3 .bloquePequeno > .botonDeBloque {
+    background-color: transparent;
+    color: #00d4ff;
+    font-size: 16px;
+    padding: 1px 6px;
+    width: fit-content;
+    height: 26px;
+    border-radius: 19px;
+    border-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease;
+    letter-spacing: 1.25px;
+    text-indent: 0px;
+    text-align: center;
+  }
+
+  .seccion3 .bloquePequeno > .botonDeBloque:hover {
+    opacity: 0.8;
+  }
+
+  .seccion3 .bloquePequeno > .botonDeBloque > .flechaDelBoton {
+    width: 24px;
+    height: 24px;
+    transition: all 0.15s ease;
+  }
+
+  .seccion3 .bloquePequeno > .botonDeBloque:hover > .flechaDelBoton {
+    transform: translateX(7px);
+  }
+
+  .seccion3 .bloquePequeno > .imgDeBloque {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 551px) {
+  .divLineaTransversalSeccion3.arriba {
+    background: linear-gradient(
+      -3deg,
+      #0a2540 0%,
+      #0a2540 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+  .divLineaTransversalSeccion3.abajo {
+    background: linear-gradient(
+      175deg,
+      #0a2540 0%,
+      #0a2540 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+
+  .superDivSeccion3 {
+    position: relative;
+    top: 150px;
+  }
+
+  .divLineaTransversalSeccion3 {
+    bottom: -10px;
+  }
+
+  .seccion3 {
+    bottom: -9px;
+  }
+
+  .seccion3 .flexIzquierda {
+    width: 50vw;
+  }
+
+  .seccion3 .flexDerecha {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+  }
+
+  .seccion3 .flexDerecha > .imgDeFlex {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .seccion3 .flexDerecha > .imgDeFlex:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 200px;
+  }
+
+  .divLineaTransversalSeccion3.abajo {
+    background: linear-gradient(
+      175deg,
+      #0a2540 0%,
+      #0a2540 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+
+  .divLineaTransversalSeccion3 {
+    top: 60px;
+  }
+
+  .seccion3 {
+    top: 59px;
+  }
+
+  .seccion3 .flexIzquierda {
+    width: 64%;
+  }
+
+  .seccion3 .flexDerecha {
+    width: 36%;
+    justify-content: space-around;
+  }
+
+  .seccion3 .bloqueGrande > .h2DeBloque {
+    font-size: 40px;
+  }
+
+  .seccion3 .divBloquesPequenos {
+    display: flex;
+  }
+
+  .seccion3 .bloquePequeno > .h3DeBloque {
+    font-size: 22px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 851px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 390px;
+  }
+
+  .seccion3 {
+    top: 199px;
+  }
+  .seccion3 .flexIzquierda {
+    width: 52%;
+  }
+
+  .seccion3 .flexDerecha {
+    width: 48%;
+  }
+
+  .seccion3 .imgDeFlex {
+    width: 470px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1144px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 550px;
+  }
+
+  .divLineaTransversalSeccion3.arriba {
+    background: linear-gradient(
+      -3deg,
+      #0a2540 0%,
+      #0a2540 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+
+  .divLineaTransversalSeccion3.abajo {
+    background: linear-gradient(
+      176deg,
+      #0a2540 0%,
+      #0a2540 50%,
+      transparent 50%,
+      transparent 100%
+    );
+  }
+}

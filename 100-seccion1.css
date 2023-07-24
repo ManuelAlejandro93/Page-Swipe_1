@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@media (min-width: 320px) {
+  .fondoHeader {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0 16px;
+  }
+
+  .navHeader .menu,
+  .signIn {
+    display: none;
+  }
+
+  .navHeader .swipeLogo {
+    width: 70px;
+    height: 36px;
+  }
+
+  .navHeader .pseudoHamburguesa {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fafafa40;
+    padding-bottom: 4px;
+    transition: all 0.25s;
+  }
+
+  .navHeader .pseudoHamburguesa:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  .navHeader .pseudoHamburguesa .linea {
+    width: 40%;
+    height: 3px;
+
+    
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 2px;
+  }
+
+  /* Organizacion de el div con informacion */
+
+  .divInfo {
+    display: flex;
+    padding: 0px 16px;
+    width: 100%;
+  }
+
+  .cel {
+    display: none;
+  }
+
+  .divIzquierda {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-evenly;
+  }
+
+  .divIzquierda > h1 {
+    margin-top: 10px;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 58px;
+    width: 100%;
+    line-height: 65px;
+    font-weight: 600;
+    
+  }
+
+  .divIzquierda > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  /* Organizando Div botones */
+
+  .divBotones {
+    display: flex;
+    width: 100%;
+    margin: 16px 0px;
+  }
+
+  .divBotones > button {
+    background-color: #0a2540;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 136px;
+    height: 40px;
+    border-radius: 19px;
+    border-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+    letter-spacing: 1.25px;
+  }
+
+  .divBotones > button:hover {
+    opacity: 0.5;
+  }
+
+  .divBotones > button:hover img {
+    transform: translatex(4px);
+  }
+  .divBotones button.botonStart {
+    background-color: #0a2540;
+  }
+
+  .divBotones button.botonSales {
+    color: #7000ff;
+    background-color: transparent;
+    margin-left: 16px;
+    width: 146px;
+  }
+
+  .divBotones > .botones-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .gridHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .gridHeader > .gridHeader-Img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 551px) {
+  .divInfo {
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+
+  .divIzquierda {
+    width: 55%;
+  }
+
+  .cel {
+    display: block;
+    width: 258px;
+    height: 450px;
+  }
+
+  .divIzquierda > h1 {
+    width: 100%;
+  }
+
+  .divIzquierda > p {
+    width: 100%;
+  }
+
+  .gridHeader {
+    margin-top: 60px;
+    grid-template: 1fr 1fr /1fr 1fr 1fr 1fr;
+  }
+}
+
+/* Organizar la vista 3 */
+
+@media (min-width: 769px) {
+  .fondoHeader {
+    height: 100vh;
+  }
+
+  .navHeader .menu {
+    display: inline;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .navHeader > .menu > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+  }
+
+  .navHeader > .menu > a:hover {
+    text-decoration: underline;
+  }
+
+  .navHeader > .signIn {
+    display: block;
+    margin-right: 20px;
+    width: 90px;
+    height: 40px;
+    background-color: #fafafa40;
+    border-radius: 18px;
+    border-color: transparent;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    cursor: pointer;
+    padding-top: 7px;
+    transition: all 0.1s;
+  }
+
+  .navHeader > .signIn:hover {
+    background-color: #fafafaab;
+  }
+  .navHeader > .pseudoHamburguesa {
+    display: none;
+  }
+
+  .divIzquierda > h1 {
+    font-size: 70px;
+    line-height: 75px;
+  }
+
+  .cel {
+    display: block;
+    width: 315px;
+    height: 550px;
+  }
+}
+
+/* Organizando vista 4 */
+@media (min-width: 851px) {
+}

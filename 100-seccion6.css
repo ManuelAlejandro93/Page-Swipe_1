@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.seccion6 {
+  padding: 0px 16px;
+}
+
+.seccion6 * {
+  font-family: "Roboto", sans-serif;
+}
+
+.seccion6 .divArriba,
+.divAbajo,
+.divBloquesPequenos {
+  display: flex;
+}
+
+@media (min-width: 320px) {
+  .seccion6 {
+    margin: 8px 0;
+    padding-right: 8px;
+  }
+
+  .seccion6 .divArriba,
+  .divAbajo,
+  .divBloquesPequenos {
+    flex-direction: column;
+  }
+
+  .seccion6 .bloqueGrande {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+  .seccion6 .bloqueGrande > .subtitulo6 {
+    font-size: 17px;
+    width: max-content;
+    height: 26px;
+    font-family: "Anek Telugu", sans-serif;
+    color: #6962f7;
+    margin: 16px 0;
+    line-height: 26px;
+  }
+
+  .seccion6 .bloqueGrande > .h2DeBloque {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 34px;
+    width: 100%;
+    line-height: 50px;
+    font-weight: 600;
+  }
+
+  .seccion6 .bloqueGrande > .pDeBloque {
+    font-size: 18px;
+    margin: 16px 0;
+    line-height: 26px;
+  }
+
+  .seccion6 .bloqueGrande > .pDeBloque > .aDePDeBloque {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #6962f7;
+    font-weight: bold;
+    transition: all 0.6s;
+  }
+
+  .seccion6 .bloqueGrande > .pDeBloque > .aDePDeBloque:hover {
+    color: hsl(243, 90%, 18%);
+  }
+
+  .seccion6 .bloqueGrande > .botonDeBloque {
+    background-color: #6962f7;
+    color: white;
+    width: 136px;
+    height: 40px;
+    border-radius: 19px;
+    border-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+  .seccion6 .bloqueGrande > .botonDeBloque:hover {
+    background-color: #0a2540;
+  }
+
+  .seccion6 .bloqueGrande > .botonDeBloque > .imagenDeBoton {
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease;
+  }
+
+  .seccion6 .bloqueGrande > .botonDeBloque:hover > .imagenDeBoton {
+    transform: translateX(7px);
+  }
+
+  .seccion6 .card {
+    width: 100%;
+    height: 446px;
+    border-radius: 19px;
+    margin: 16px 0;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      101.33deg,
+      #08209a 0.76%,
+      #6563ff 33.33%,
+      #36c5f0 48.92%,
+      transparent 48.92%,
+      transparent 100%
+    );
+  }
+
+  .seccion6 .card > .cardArriba {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    background-color: #6962f7;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      101.33deg,
+      #08209a 0.76%,
+      #6563ff 33.33%,
+      #36c5f0 76.92%,
+      #83e2ff 96.96%
+    );
+    transform: skewY(-5deg);
+    position: relative;
+  }
+
+  .seccion6 .card > .cardArriba > .swipe-sessions {
+    width: 338px;
+    height: 56px;
+    transform: skewY(5deg);
+  }
+
+  .seccion6 .card > .cardArriba > .contenedorImagenes {
+    transform: skewY(5deg);
+  }
+
+  .seccion6 .card > .cardArriba > .contenedorImagenes > .imagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+  }
+
+  .seccion6 .card > .cardArriba > .contenedorImagenes > .imagen:last-child {
+    position: relative;
+    z-index: 2;
+    transform: translateX(-27px);
+  }
+
+  .seccion6 .card > .cardAbajo {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+  .seccion6 .card > .cardAbajo > .contenido {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+  }
+
+  .seccion6 .card > .cardAbajo > .contenido > .titulo {
+    color: #6962f7;
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .seccion6 .card > .cardAbajo > .contenido > .parrafo {
+    font-family: "Anek Telugu", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    margin: 16px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+  }
+
+  .seccion6 .bloquePequeno {
+    margin: 16px 0;
+    font-family: "Roboto", sans-serif;
+    padding: 8px 16px 8px 0;
+  }
+
+  .seccion6 .bloquePequeno > .h3DeBloque {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .seccion6 .bloquePequeno > .pDeBloque {
+    margin: 16px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #adbdcc;
+    letter-spacing: 0.25px;
+  }
+
+  .seccion6 .bloquePequeno > .imgDeBloque {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .seccion6 .bloquePequeno > .botonDeBloque {
+    background-color: transparent;
+    color: #7000ff;
+    font-size: 16px;
+    padding: 1px;
+    width: fit-content;
+    height: 26px;
+    border-radius: 19px;
+    border-color: transparent;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease;
+    letter-spacing: 1.25px;
+    text-indent: 0px;
+    text-align: center;
+  }
+
+  .seccion6 .bloquePequeno > .botonDeBloque:hover {
+    opacity: 0.5;
+  }
+
+  .seccion6 .bloquePequeno > .botonDeBloque > .imgDeBoton {
+    width: 24px;
+    height: 24px;
+    transition: all 0.15s ease;
+  }
+
+  .seccion6 .bloquePequeno > .botonDeBloque:hover > .imgDeBoton {
+    transform: translateX(7px);
+  }
+}
+
+@media (min-width: 551px) {
+  .seccion6 {
+    position: relative;
+    top: 150px;
+  }
+
+  .seccion6 .divArriba {
+    flex-direction: row;
+  }
+  .seccion6 .divArriba > .bloqueGrande {
+    width: 50%;
+    padding-right: 64px;
+  }
+
+  .seccion6 .divArriba > .card {
+    width: 50%;
+  }
+
+  .seccion6 .divAbajo {
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  .seccion6 .divAbajo > .bloqueGrande {
+    width: 50%;
+    padding-right: 64px;
+  }
+  .seccion6 .divAbajo > .divBloquesPequenos {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .seccion6 {
+    position: relative;
+    top: 200px;
+  }
+
+  .seccion6 .bloqueGrande > .h2DeBloque {
+    font-size: 40px;
+  }
+
+  .seccion6 .bloquePequeno > .h3DeBloque {
+    font-size: 22px;
+  }
+
+  .seccion6 .divAbajo > .divBloquesPequenos {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 850px) {
+  .seccion6 {
+    position: relative;
+    top: 390px;
+  }
+
+  .seccion6 .divArriba {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1144px) {
+  .seccion6 {
+    position: relative;
+    top: 650px;
+  }
+}

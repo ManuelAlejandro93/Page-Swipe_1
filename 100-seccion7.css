@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  padding: 64px 16px;
+  background-color: #f7f9fc;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.footer * {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 320px) {
+  .footer .contenedor {
+    display: grid;
+    width: 100%;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  .footer .contenedor > .subContenedor {
+    margin: 16px 0;
+  }
+
+  .footer .contenedor > .subContenedor:first-child > .imgDeSubContenedor {
+    width: 108px;
+    height: 52px;
+    margin-bottom: 16px;
+  }
+
+  .footer .contenedor > .subContenedor > .bloquePequeno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .footer .h3DeSubcontenedor {
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 16px;
+  }
+
+  .footer
+    .contenedor
+    > .subContenedor:first-child
+    > .bloquePequeno
+    .imgDeSubContenedor {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer .contenedor > .subContenedor > .lista {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .aDeLista {
+    margin: 16px 0;
+  }
+}
+
+@media (min-width: 551px) {
+  .footer {
+    position: relative;
+    top: 150px;
+  }
+
+  .footer .contenedor {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+  }
+
+  .footer .contenedor > .subContenedor:first-child > .imgDeSubContenedor {
+    width: 108px;
+    height: 52px;
+    margin-bottom: 16px;
+  }
+
+  .footer
+    .contenedor
+    > .subContenedor:first-child
+    > .bloquePequeno
+    .imgDeSubContenedor {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer .aDeLista {
+    font-size: 16px;
+    transition: all 0.25s;
+  }
+
+  .footer .aDeLista:hover {
+    font-size: 16px;
+    color: #6962f7;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer {
+    top: 250px;
+  }
+}
+
+@media (min-width: 851px) {
+  .footer {
+    top: 420px;
+  }
+}
+
+@media (min-width: 1144px) {
+  .footer {
+    position: relative;
+    top: 750px;
+  }
+}
