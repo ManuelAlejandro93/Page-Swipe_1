@@ -1,4 +1,2 @@
 # Swipe_1
-Repositorio para montar la página terminada.
-
-<!-- Ser o no ser. Lo mejor es comer. -->
+See the page in this link: https://manuelalejandro93.github.io/Page-Swipe_1/
