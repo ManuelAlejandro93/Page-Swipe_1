@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
 
+
+
 .seccion2 {
   width: 100%;
   background-color: #f7f9fc;
+
 }
 
 @media (min-width: 320px) {
@@ -19,7 +22,6 @@
 
   .seccion2 .divConTexto > p {
     color: #6962f7;
-    width: 100vw;
     height: 26px;
     margin: 16px;
   }
