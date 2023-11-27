@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.seccion3{
-  background-color: red;
-}
 
 .divLineaTransversalSeccion3.arriba {
   width: 100%;
@@ -299,7 +296,7 @@
 @media (min-width: 1144px) {
   .superDivSeccion3 {
     position: relative;
-    top: 550px;
+    top: 700px;
   }
 
   .divLineaTransversalSeccion3.arriba {
@@ -320,5 +317,44 @@
       transparent 50%,
       transparent 100%
     );
+  }
+}
+
+@media (min-width: 1400px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 700px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 900px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .superDivSeccion3 {
+    position: relative;
+    top: 900px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .superDivSeccion3 {
+    top: 1000px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .superDivSeccion3 {
+    top: 1200px;
+  }
+}
+
+@media (min-width: 2400px) {
+  .superDivSeccion3 {
+    top: 1500px;
   }
 }
