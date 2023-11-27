@@ -257,3 +257,35 @@
 /* Organizando vista 4 */
 @media (min-width: 851px) {
 }
+
+
+@media (min-width: 1440px) {
+  .divIzquierda > h1 {
+    font-size: 90px;
+  }
+
+  .divIzquierda > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .cel {
+    display: block;
+    width: 600px;
+    height: 900px; 
+  }
+
+  
+
+  .divBotones > button {
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .divBotones button.botonSales{
+    width: 250px;
+    height: 60px;
+  }
+}
